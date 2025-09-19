@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <title>Работа / Подработка — Курьеры и Водители</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#333; background:#f8f9fa; }
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; color:#333; background:#f8f9fa; }
     header {
       background: url('https://images.unsplash.com/photo-1600359756091-eff1c7c9e9f3?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
-      background-size: cover;
-      color: white; text-align: center; padding: 80px 20px;
+      background-size: cover; color:white; text-align:center; padding:100px 20px;
     }
-    header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
-    header p { font-size: 1.2em; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+    header h1 { font-size:2.8em; margin-bottom:15px; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
+    header p { font-size:1.3em; margin-bottom:20px; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
     .btn {
-      display:inline-block; background:#ffcc00; color:#333; padding:15px 30px; 
-      text-decoration:none; font-size:1.2em; border-radius:5px; margin-top:20px;
+      display:inline-block; background:#ffcc00; color:#333; padding:15px 30px;
+      text-decoration:none; font-size:1.1em; border-radius:5px; margin:10px;
       transition: background 0.3s;
     }
     .btn:hover { background:#ffdb4d; }
@@ -23,12 +23,15 @@
     section h2 { text-align:center; margin-bottom:40px; font-size:2em; }
     .cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
     .card {
-      background:white; border-radius:10px; padding:20px; text-align:center;
-      box-shadow:0 4px 8px rgba(0,0,0,0.1); flex:1 1 250px; max-width:280px;
+      background:white; border-radius:10px; padding:25px; text-align:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1); flex:1 1 280px; max-width:300px;
+      transition: transform 0.3s;
     }
-    .card img { width:80px; margin-bottom:15px; }
-    ul { list-style:disc; padding-left:20px; }
-    footer { background:#222; color:#ccc; text-align:center; padding:20px; font-size:0.9em; margin-top:40px; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width:90px; margin-bottom:15px; }
+    ul { list-style:disc; padding-left:20px; max-width:600px; margin:auto; }
+    .highlight { background:#fff7d6; padding:40px 20px; border-radius:10px; }
+    footer { background:#222; color:#ccc; text-align:center; padding:25px; font-size:0.85em; margin-top:40px; }
   </style>
 </head>
 <body>
@@ -37,12 +40,14 @@
     <h1>Работа / Подработка в доставке</h1>
     <p>Без опыта. Пешком, на велосипеде или на автомобиле</p>
     <a href="YOUR_REFERRAL_LINK" class="btn">Стать курьером</a>
+    <a href="https://t.me/yarabotapodrabotka" class="btn">Написать в Telegram</a>
   </header>
 
   <section>
     <h2>О работе</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      Свободный график, быстрые выплаты, простая регистрация. Отличный вариант для студентов, водителей и всех, кто хочет дополнительный доход.
+    <p style="text-align:center; max-width:750px; margin:auto; font-size:1.1em;">
+      Свободный график, быстрые выплаты и простая регистрация. Работа отлично подходит для студентов, водителей и всех, кто ищет дополнительный доход.  
+      Ты сам выбираешь — выходить на смену пешком, на велосипеде или на автомобиле.
     </p>
   </section>
 
@@ -52,37 +57,39 @@
       <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/1048/1048314.png" alt="Курьер пешком">
         <h3>Курьер пешком</h3>
-        <p>Работай в своём районе и получай деньги каждый день.</p>
+        <p>Работай в своём районе — минимальные затраты и удобство.</p>
       </div>
       <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Курьер на велосипеде">
         <h3>Курьер на велосипеде</h3>
-        <p>Доставка быстрее, больше заказов — больше доход.</p>
+        <p>Быстрая доставка и больше заказов для активных людей.</p>
       </div>
       <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Курьер на авто">
         <h3>Курьер на автомобиле</h3>
-        <p>Подходит для тех, кто любит передвигаться на машине.</p>
+        <p>Идеально для тех, кто любит комфорт и скорость.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="highlight">
     <h2>Бонусы и выгоды</h2>
     <ul>
       <li>Гибкий график — работай когда удобно</li>
       <li>Заработок каждый день</li>
-      <li>Быстрая регистрация</li>
+      <li>Быстрая и простая регистрация</li>
       <li>Подходит без опыта</li>
     </ul>
   </section>
 
   <section style="text-align:center;">
     <a href="YOUR_REFERRAL_LINK" class="btn">Присоединиться</a>
+    <a href="https://t.me/yarabotapodrabotka" class="btn">Связаться в Telegram</a>
   </section>
 
   <footer>
-    © 2025 Работа / Подработка — все права защищены
+    © 2025 Работа / Подработка — все права защищены. <br>
+    Не является официальным сайтом компании. Информация носит ознакомительный характер.
   </footer>
 
 </body>
