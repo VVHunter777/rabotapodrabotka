@@ -5,47 +5,64 @@
   <title>Работа / Подработка — Курьеры и Водители</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; color: #333; }
-    header { background: url('https://images.unsplash.com/photo-1580910051074-3d2ca9b47e52?auto=format&fit=crop&w=1600&q=80') no-repeat center center; background-size: cover; color: white; text-align: center; padding: 80px 20px; }
-    header h1 { font-size: 2.5em; margin-bottom: 20px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; color:#333; background:#f8f9fa; }
+    header {
+      background: url('https://images.unsplash.com/photo-1600359756091-eff1c7c9e9f3?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      color: white; text-align: center; padding: 80px 20px;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
     header p { font-size: 1.2em; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    section h2 { text-align:center; margin-bottom:20px; }
-    .icons { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; }
-    .icons .item { text-align: center; width: 30%; min-width: 150px; margin-bottom: 20px; }
-    .icons .item img { width: 100px; height: 100px; object-fit: contain; }
-    .btn { display: inline-block; background-color: #ffcc00; color: #333; padding: 15px 30px; text-decoration: none; font-size: 1.2em; border-radius: 5px; margin: 20px 0; transition: background 0.3s; }
-    .btn:hover { background-color: #ffdb4d; }
-    footer { background: #f2f2f2; text-align: center; padding: 20px 0; font-size: 0.9em; margin-top:40px; }
+    .btn {
+      display:inline-block; background:#ffcc00; color:#333; padding:15px 30px; 
+      text-decoration:none; font-size:1.2em; border-radius:5px; margin-top:20px;
+      transition: background 0.3s;
+    }
+    .btn:hover { background:#ffdb4d; }
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+    section h2 { text-align:center; margin-bottom:40px; font-size:2em; }
+    .cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card {
+      background:white; border-radius:10px; padding:20px; text-align:center;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1); flex:1 1 250px; max-width:280px;
+    }
+    .card img { width:80px; margin-bottom:15px; }
+    ul { list-style:disc; padding-left:20px; }
+    footer { background:#222; color:#ccc; text-align:center; padding:20px; font-size:0.9em; margin-top:40px; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Работа / Подработка в доставке</h1>
-    <p>Подходит без опыта. Пешком, на велосипеде или на автомобиле</p>
+    <p>Без опыта. Пешком, на велосипеде или на автомобиле</p>
     <a href="YOUR_REFERRAL_LINK" class="btn">Стать курьером</a>
   </header>
 
   <section>
     <h2>О работе</h2>
-    <p>Выходи на смену в удобное для тебя время, получай ежедневные выплаты. Идеально подходит для студентов, водителей и всех, кто ищет подработку.</p>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Свободный график, быстрые выплаты, простая регистрация. Отличный вариант для студентов, водителей и всех, кто хочет дополнительный доход.
+    </p>
   </section>
 
   <section>
-    <h2>Как можно работать</h2>
-    <div class="icons">
-      <div class="item">
-        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048314.png" alt="Пеший курьер">
-        <p>Пешком</p>
+    <h2>Форматы работы</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048314.png" alt="Курьер пешком">
+        <h3>Курьер пешком</h3>
+        <p>Работай в своём районе и получай деньги каждый день.</p>
       </div>
-      <div class="item">
+      <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Курьер на велосипеде">
-        <p>Велосипед</p>
+        <h3>Курьер на велосипеде</h3>
+        <p>Доставка быстрее, больше заказов — больше доход.</p>
       </div>
-      <div class="item">
+      <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Курьер на авто">
-        <p>Авто</p>
+        <h3>Курьер на автомобиле</h3>
+        <p>Подходит для тех, кто любит передвигаться на машине.</p>
       </div>
     </div>
   </section>
@@ -53,15 +70,15 @@
   <section>
     <h2>Бонусы и выгоды</h2>
     <ul>
-      <li>Быстрая регистрация</li>
-      <li>Гибкий график</li>
-      <li>Подходит без опыта</li>
+      <li>Гибкий график — работай когда удобно</li>
       <li>Заработок каждый день</li>
+      <li>Быстрая регистрация</li>
+      <li>Подходит без опыта</li>
     </ul>
   </section>
 
-  <section style="text-align: center;">
-    <a href="YOUR_REFERRAL_LINK" class="btn">Регистрация</a>
+  <section style="text-align:center;">
+    <a href="YOUR_REFERRAL_LINK" class="btn">Присоединиться</a>
   </section>
 
   <footer>
