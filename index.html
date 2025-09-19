@@ -6,27 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:'Roboto', sans-serif; color:#333; 
-      background: #fefefe; }
+    body { margin:0; font-family:'Roboto', sans-serif; color:#333; background:#fefefe; }
     header {
       background: url('https://images.unsplash.com/photo-1600359756091-eff1c7c9e9f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       color:#fff; text-align:center; padding:100px 20px; position:relative;
     }
-    header::after {
-      content:""; position:absolute; inset:0; background:rgba(0,0,0,0.45);
-    }
+    header::after {content:""; position:absolute; inset:0; background:rgba(0,0,0,0.45);}
     header h1, header p, header a { position:relative; z-index:2; }
     header h1 { font-size:2.8rem; margin:0 0 15px; text-shadow:1px 1px 4px rgba(0,0,0,0.55);}
     header p { font-size:1.2rem; margin:0 0 20px; text-shadow:1px 1px 4px rgba(0,0,0,0.55);}
-    .btn {
-      display:inline-block; background:#ffcc00; color:#222; text-decoration:none;
-      padding:14px 26px; border-radius:8px; margin:8px; font-weight:700; transition:.2s
-    }
+    .btn {display:inline-block; background:#ffcc00; color:#222; text-decoration:none;
+      padding:14px 26px; border-radius:8px; margin:8px; font-weight:700; transition:.2s}
     .btn:hover{filter:brightness(1.05); transform:translateY(-2px);}
     section {max-width:1000px; margin:0 auto; padding:60px 20px;}
-    section.bg-wave { 
-      background: url('https://www.transparenttextures.com/patterns/cubes.png');
-    }
+    section.bg-wave { background:url('https://www.transparenttextures.com/patterns/cubes.png'); }
     h2 {font-size:2rem; text-align:center; margin:0 0 34px;}
     .cards {display:flex; flex-wrap:wrap; gap:22px; justify-content:center;}
     .card {
@@ -35,11 +28,8 @@
     }
     .card:hover {transform:translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15);}
     .card img {width:100px; margin-bottom:16px;}
-    .highlight {
-      background:linear-gradient(135deg,#fff7d6,#fff);
-      border-radius:12px; padding:38px 22px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    }
+    .highlight {background:linear-gradient(135deg,#fff7d6,#fff); border-radius:12px; padding:38px 22px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);}
     ul {max-width:620px; margin:0 auto; padding-left:20px;}
     footer {background:#222; color:#bbb; text-align:center; padding:26px; font-size:.9rem; margin-top:48px;}
   </style>
@@ -65,7 +55,7 @@
     <h2>Форматы работы</h2>
     <div class="cards">
 
-      <!-- Автомобиль -->
+      <!-- Машина -->
       <article class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Курьер на автомобиле">
         <h3>Курьер на автомобиле</h3>
@@ -81,7 +71,7 @@
 
       <!-- Пешком -->
       <article class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048314.png" alt="Курьер пешком">
+        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Курьер пешком">
         <h3>Курьер пешком</h3>
         <p>Работай в своём районе — минимальные затраты и удобство.</p>
       </article>
