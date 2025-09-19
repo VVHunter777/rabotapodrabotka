@@ -1,196 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Работа / Подработка — Курьеры и Водители</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Свободный график, быстрые выплаты. Курьер пешком, на мото/вело или на автомобиле." />
-  <meta name="theme-color" content="#ffcc00" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа / Подработка в доставке</title>
   <style>
-    :root{
-      --bg:#f9fafb;
-      --text:#1f2937;
-      --muted:#6b7280;
-      --accent:#ffcc00;
-      --card:#ffffff;
-      --shadow:0 8px 28px rgba(2, 8, 20, .08);
-      --radius:16px;
-      --brand:#111827;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:'Roboto',system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--text); background:
-      radial-gradient(1200px 800px at 50% -200px, #fff7d6 0%, rgba(255,255,255,0) 70%), var(--bg);}
-    a{color:inherit}
-    /* Hero */
-    header{
-      position:relative;
-      background:url('https://images.unsplash.com/photo-1600359756091-eff1c7c9e9f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color:#fff; text-align:center; padding:112px 20px;
-      overflow:hidden;
+
+    header {
+      background: linear-gradient(135deg, #FFD54F, #FFB300);
+      color: #000;
+      text-align: center;
+      padding: 60px 20px;
     }
-    header::after{content:""; position:absolute; inset:0; background:rgba(0,0,0,.45);}
-    header .inner{position:relative; z-index:1; max-width:1100px; margin:0 auto;}
-    header h1{margin:0 0 12px; font-size:42px; line-height:1.15; text-shadow:0 2px 6px rgba(0,0,0,.6)}
-    header p{margin:0 0 22px; font-size:18px; opacity:.95; text-shadow:0 2px 6px rgba(0,0,0,.55)}
-    .btn{
-      display:inline-block; padding:14px 26px; margin:8px; border-radius:10px;
-      background:var(--accent); color:#111; font-weight:700; text-decoration:none; transition:.2s;
-      box-shadow:0 8px 20px rgba(255,204,0,.25);
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
     }
-    .btn:hover{transform:translateY(-2px); filter:brightness(1.05)}
-    .btn.alt{background:#fff; color:#111; box-shadow:0 8px 20px rgba(255,255,255,.15)}
-    /* Sections */
-    section{max-width:1100px; margin:0 auto; padding:64px 20px}
-    h2{margin:0 0 32px; font-size:32px; text-align:center; color:var(--brand)}
-    .lead{max-width:760px; margin:0 auto; text-align:center; color:var(--muted); font-size:18px}
-    /* Cards */
-    .cards{display:flex; flex-wrap:wrap; gap:24px; justify-content:center}
-    .card{
-      background:var(--card); border-radius:var(--radius); padding:26px; width:100%; max-width:330px;
-      box-shadow:var(--shadow); text-align:center; transition:transform .2s, box-shadow .2s;
+
+    header p {
+      margin: 10px 0 20px;
+      font-size: 18px;
     }
-    .card:hover{transform:translateY(-6px); box-shadow:0 14px 36px rgba(2,8,20,.12)}
-    .icon{width:106px; height:106px; margin:0 auto 14px; display:block}
-    .card h3{margin:6px 0 10px; font-size:20px}
-    .card p{margin:0; color:var(--muted)}
-    /* Highlight */
-    .highlight{background:linear-gradient(180deg,#fff7d6 0%, #ffffff 100%); border-radius:var(--radius); padding:38px 26px; box-shadow:var(--shadow)}
-    ul{max-width:700px; margin:0 auto; padding-left:18px; color:var(--text)}
-    li{margin:8px 0}
-    footer{background:#111827; color:#cbd5e1; text-align:center; padding:28px; font-size:14px}
-    @media (max-width:640px){
-      header{padding:84px 16px}
-      header h1{font-size:30px}
+
+    .cta-button {
+      background: #ffcc00;
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: center;
+      flex: 1 1 300px;
+      max-width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
-  <!-- HERO -->
   <header>
-    <div class="inner">
-      <h1>Работа / Подработка в доставке</h1>
-      <p>Без опыта: пешком, на мото/вело или на автомобиле. Свободный график и ежедневные выплаты.</p>
-      <a class="btn" href="YOUR_REFERRAL_LINK">Стать курьером</a>
-      <a class="btn alt" href="https://t.me/yarabotapodrabotka">Написать в Telegram</a>
-    </div>
+    <h1>Работа / Подработка в доставке</h1>
+    <p>Подходит без опыта. Пешком, на мото/вело или на автомобиле</p>
+    <a href="#" class="cta-button">Стать курьером</a>
   </header>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>О работе</h2>
-    <p class="lead">
-      Выходи на смены когда удобно. Простой старт, стабильные заказы и прозрачные выплаты.
-      Выбирай формат — на авто, мото/вело или пешком.
-    </p>
-  </section>
-
-  <!-- FORMATS -->
   <section>
     <h2>Форматы работы</h2>
     <div class="cards">
 
       <!-- Автомобиль -->
-      <article class="card">
-        <!-- COLOR FLAT CAR (inline SVG) -->
-        <svg class="icon" viewBox="0 0 120 120" aria-hidden="true">
-          <defs>
-            <linearGradient id="carBody" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#4F46E5"/>
-              <stop offset="1" stop-color="#2563EB"/>
-            </linearGradient>
-          </defs>
-          <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 73c2-7 6-12 14-14l33-8c7-1 14 2 18 8l7 10h7c7 0 11 4 11 9v10c0 5-4 9-9 9H20c-5 0-9-4-9-9V82c0-4 1-7 3-9z" fill="url(#carBody)"/>
-            <circle cx="36" cy="92" r="9" fill="#0ea5e9"/>
-            <circle cx="88" cy="92" r="9" fill="#0ea5e9"/>
-            <path d="M52 51l-12 2c-4 1-7 4-9 7M64 50l14 1c4 0 7 2 9 5" />
-            <path d="M68 67h16M30 67h24" />
-          </g>
-        </svg>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743922.png" alt="Авто">
         <h3>Курьер на автомобиле</h3>
         <p>Идеально для тех, кто любит комфорт и скорость.</p>
-      </article>
+      </div>
 
-      <!-- Мото/вело -->
-      <article class="card">
-        <!-- BIKE/SCOOTER FLAT (inline SVG) -->
-        <svg class="icon" viewBox="0 0 120 120" aria-hidden="true">
-          <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <!-- wheels -->
-            <circle cx="34" cy="86" r="16" fill="#10B981"/>
-            <circle cx="86" cy="86" r="16" fill="#10B981"/>
-            <!-- frame -->
-            <path d="M38 58h18l12 18H46l-8 10" stroke="#22c55e"/>
-            <path d="M74 56l8 14" stroke="#22c55e"/>
-            <!-- handle/seat -->
-            <path d="M78 56h10M56 58v-8h10" />
-            <!-- small scooter deck hint -->
-            <path d="M46 92h30" />
-          </g>
-        </svg>
+      <!-- Мото/Вело -->
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Мото/Вело">
         <h3>Курьер на мото/вело</h3>
         <p>Быстрая доставка и больше заказов для активных людей.</p>
-      </article>
+      </div>
 
       <!-- Пешком -->
-      <article class="card">
-        <!-- WALKER WITH BAG (inline SVG) -->
-        <svg class="icon" viewBox="0 0 120 120" aria-hidden="true">
-          <defs>
-            <linearGradient id="bag" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#F59E0B"/>
-              <stop offset="1" stop-color="#FBBF24"/>
-            </linearGradient>
-          </defs>
-          <g fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="60" cy="24" r="8" fill="#fda4af"/>
-            <path d="M54 34c6-2 12-2 16 2l10 8" />
-            <path d="M58 42l-6 18m12-16l-3 12m-12 10l-10 18m18-12l14 18" />
-            <!-- delivery bag -->
-            <path d="M30 54l16 10" />
-            <path d="M38 44l14 8" />
-            <path d="M78 48l-6 10" />
-            <path d="M44 76l12 0" />
-            <path d="M82 64l-6 8" />
-            <path d="M48 58l-12 10" />
-            <path d="M72 44l10 8" />
-            <!-- hand bag -->
-            <path d="M78 70h16v18H78z" fill="url(#bag)"/>
-            <path d="M80 70c0-3 2-6 6-6s6 3 6 6" />
-          </g>
-        </svg>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Пешком">
         <h3>Курьер пешком</h3>
         <p>Работай в своём районе — минимальные затраты и удобство.</p>
-      </article>
+      </div>
 
     </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section>
-    <div class="highlight">
-      <h2>Бонусы и выгоды</h2>
-      <ul>
-        <li>Гибкий график — работай когда удобно</li>
-        <li>Ежедневные выплаты</li>
-        <li>Быстрая регистрация, подходит без опыта</li>
-        <li>Поддержка и обучение для новичков</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section style="text-align:center">
-    <a class="btn" href="YOUR_REFERRAL_LINK">Присоединиться</a>
-    <a class="btn alt" href="https://t.me/yarabotapodrabotka">Связаться в Telegram</a>
   </section>
 
   <footer>
-    © 2025 Работа / Подработка — все права защищены. <br>
-    Не является официальным сайтом компании. Информация носит ознакомительный характер.
+    <p>&copy; 2025 rabotapodrabotka.online — Все права защищены</p>
   </footer>
 
+  <!-- Код для подтверждения -->
+  <div style="display:none">1z63lh9gpd5hiz52</div>
 </body>
 </html>
