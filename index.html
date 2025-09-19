@@ -7,28 +7,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body { margin:0; font-family:'Roboto', sans-serif; color:#333; 
-      background: linear-gradient(180deg, #fff7d6 0%, #ffffff 100%); }
+      background: #fefefe; }
     header {
       background: url('https://images.unsplash.com/photo-1600359756091-eff1c7c9e9f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color:#fff; text-align:center; padding:100px 20px;
+      color:#fff; text-align:center; padding:100px 20px; position:relative;
     }
+    header::after {
+      content:""; position:absolute; inset:0; background:rgba(0,0,0,0.45);
+    }
+    header h1, header p, header a { position:relative; z-index:2; }
     header h1 { font-size:2.8rem; margin:0 0 15px; text-shadow:1px 1px 4px rgba(0,0,0,0.55);}
     header p { font-size:1.2rem; margin:0 0 20px; text-shadow:1px 1px 4px rgba(0,0,0,0.55);}
     .btn {
       display:inline-block; background:#ffcc00; color:#222; text-decoration:none;
       padding:14px 26px; border-radius:8px; margin:8px; font-weight:700; transition:.2s
     }
-    .btn:hover{filter:brightness(1.05)}
+    .btn:hover{filter:brightness(1.05); transform:translateY(-2px);}
     section {max-width:1000px; margin:0 auto; padding:60px 20px;}
+    section.bg-wave { 
+      background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
     h2 {font-size:2rem; text-align:center; margin:0 0 34px;}
     .cards {display:flex; flex-wrap:wrap; gap:22px; justify-content:center;}
     .card {
       background:#fff; border-radius:16px; padding:28px; max-width:310px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.1); text-align:center; transition:transform .2s;
+      box-shadow:0 6px 18px rgba(0,0,0,0.1); text-align:center; transition:transform .25s, box-shadow .25s;
     }
-    .card:hover {transform:translateY(-5px);}
+    .card:hover {transform:translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15);}
     .card img {width:100px; margin-bottom:16px;}
-    .highlight {background:#fff7d6; border-radius:12px; padding:38px 22px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+    .highlight {
+      background:linear-gradient(135deg,#fff7d6,#fff);
+      border-radius:12px; padding:38px 22px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
     ul {max-width:620px; margin:0 auto; padding-left:20px;}
     footer {background:#222; color:#bbb; text-align:center; padding:26px; font-size:.9rem; margin-top:48px;}
   </style>
@@ -37,7 +48,7 @@
 
   <header>
     <h1>Работа / Подработка в доставке</h1>
-    <p>Без опыта. Пешком, на велосипеде или на автомобиле</p>
+    <p>Без опыта. Пешком, на мотоцикле/велосипеде или на автомобиле</p>
     <a class="btn" href="YOUR_REFERRAL_LINK">Стать курьером</a>
     <a class="btn" href="https://t.me/yarabotapodrabotka">Написать в Telegram</a>
   </header>
@@ -46,11 +57,11 @@
     <h2>О работе</h2>
     <p style="text-align:center; max-width:750px; margin:auto; font-size:1.1rem; color:#555;">
       Свободный график, быстрые выплаты и простая регистрация. Подходит для студентов, водителей и всех, кто хочет дополнительный доход.  
-      Выбирай формат — пешком, на велосипеде или на автомобиле.
+      Выбирай формат — пешком, на мотоцикле/велосипеде или на автомобиле.
     </p>
   </section>
 
-  <section>
+  <section class="bg-wave">
     <h2>Форматы работы</h2>
     <div class="cards">
 
@@ -61,10 +72,10 @@
         <p>Работай в своём районе — минимальные затраты и удобство.</p>
       </article>
 
-      <!-- Велосипед -->
+      <!-- Мото/Вело -->
       <article class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Курьер на велосипеде">
-        <h3>Курьер на велосипеде</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Курьер на мотоцикле/велосипеде">
+        <h3>Курьер на мотоцикле/велосипеде</h3>
         <p>Быстрая доставка и больше заказов для активных людей.</p>
       </article>
 
